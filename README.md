@@ -22,6 +22,10 @@ It uses [pypandoc](https://pypi.org/project/pypandoc/) (with [Pandoc](https://pa
 - Python packages:
   ```bash
   pip install pypandoc
+  # Consigliato: installa anche pandoc (necessario per la conversione completa)
+  # macOS: brew install pandoc
+  # Ubuntu/Debian: sudo apt-get install pandoc
+  # Windows (choco): choco install pandoc
   ```
 
 ---
