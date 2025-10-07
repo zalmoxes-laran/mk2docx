@@ -7,10 +7,10 @@ It uses [pypandoc](https://pypi.org/project/pypandoc/) (with [Pandoc](https://pa
 
 ## Features
 
-- ✅ Convert Markdown files into Word DOCX with one command.
-- ✅ Optional **reference DOCX** support to apply custom Word styles.
-- ✅ Works even if `pypandoc` is missing (uses `pandoc` CLI as a fallback).
-- ✅ Lightweight and easy to integrate into automation pipelines.
+- Convert Markdown files into Word DOCX with one command.
+- Optional **reference DOCX** support to apply custom Word styles.
+- Works even if `pypandoc` is missing (uses `pandoc` CLI as a fallback).
+- Lightweight and easy to integrate into automation pipelines.
 
 ---
 
