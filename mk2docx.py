@@ -5,8 +5,9 @@ import argparse
 import os
 import sys
 from pathlib import Path
+from typing import Optional
 
-def convert_with_pypandoc(src: Path, dst: Path, reference_docx: Path | None):
+def convert_with_pypandoc(src: Path, dst: Path, reference_docx: Optional[Path]):
     try:
         import pypandoc
     except ImportError:
@@ -23,7 +24,7 @@ def convert_with_pypandoc(src: Path, dst: Path, reference_docx: Path | None):
     except Exception as e:
         return False, str(e)
 
-def convert_with_subprocess(src: Path, dst: Path, reference_docx: Path | None):
+def convert_with_subprocess(src: Path, dst: Path, reference_docx: Optional[Path]):
     import subprocess, shlex
     cmd = ["pandoc", str(src), "-o", str(dst)]
     if reference_docx and reference_docx.exists():
