@@ -208,4 +208,5 @@ __marimo__/
 
 *.docx
 .DS_Store
-*.md
+*.md!README.md
+!INSTALL.md
